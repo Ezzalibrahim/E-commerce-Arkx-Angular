@@ -1,0 +1,12 @@
+<li *ngIf="product != null" >
+    <div class="details">
+    <button (click)="deleteProduct(product.id)" >delete</button>
+    <h2>
+        {{ product.title | titlecase }}
+    </h2>
+    <p>{{ product.price | currency }}</p>
+    <div class="product">
+        <img [src]="product.image">
+    </div>
+    </div>
+</li>
