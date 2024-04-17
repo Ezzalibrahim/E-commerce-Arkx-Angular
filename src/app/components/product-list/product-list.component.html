@@ -1,0 +1,9 @@
+
+<ul class="products-list">
+    <app-product-card 
+        *ngFor="let product of products"
+        [product]="product"
+        (delete)="deleteProduct($event)"
+    ></app-product-card>
+</ul>
+
