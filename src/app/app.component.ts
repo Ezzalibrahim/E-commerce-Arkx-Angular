@@ -23,12 +23,13 @@ export class AppComponent {
     // Pipe & Decoratores
     // input & output
     // Life cycle || hooks
+    // DI 
     // Observables & Subject
     // HttpClient & Service
     // Routing 
 
     setInterval(()=>{
-      console.log(this.username);
+      // console.log(this.username);
     },1000)
 
     setTimeout(() => {
