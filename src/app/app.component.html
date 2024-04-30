@@ -1,19 +1,2 @@
-<mat-spinner></mat-spinner>
-<mat-progress-spinner mode="determinate" ></mat-progress-spinner>
-<app-product-list></app-product-list>
-
-
-<h2>from app root</h2>
-
-<input #user [ngModel]="user" type="password" (input)="getUser($event)"  type="text" name="password" id="password">
-
-<h1>
-  {{ password }}
-</h1>
-
-
-<input [(ngModel)]="username"  type="text" name="username" id="username">
-
-<h1>
-  {{ username }}
-</h1>
+<app-header></app-header>
+<router-outlet></router-outlet>
