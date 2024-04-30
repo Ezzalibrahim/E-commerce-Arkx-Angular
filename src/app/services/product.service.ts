@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { Product } from '../models/Product';
 import { BehaviorSubject, Observable, filter,map, of, tap } from 'rxjs';
 import {  } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProductService {
 
-  private productServiceUrl : string = "https://fakestoreapi.com/products";
+  private productServiceUrl : string = environment.baseUrl +  "/products";
   isLoading$ : BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   constructor(private http : HttpClient) { }
