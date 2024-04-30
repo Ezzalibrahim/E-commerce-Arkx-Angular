@@ -10,6 +10,14 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { ZoomDirective } from './directives/zoom.directive';
 import { CouponPipe } from './pipes/coupon.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './modules/shared/shared.module';
+import { HomeComponent } from './components/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProductComponent } from './components/product/product.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { RegisterComponent } from './components/auth/register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +25,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductListComponent,
     ProductCardComponent,
     ZoomDirective,
-    CouponPipe
+    CouponPipe,
+    HomeComponent,
+    ProductComponent,
+    BlogComponent,
+    ShoppingCartComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +39,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     HttpClientModule,
     MatProgressSpinnerModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
